@@ -107,6 +107,7 @@ class PostGetFuzzer extends GeneralFuzzer
             
             foreach($this->test_data as $test)
             {
+                echo 'send... ' . $test;
                 echo 'Sending '.$this->type.' testcase ' . $i . ' / ' . $test_cases . ' (Input ' . $j . ' / ' . $input_count .')'. PHP_EOL;
                 $i++;
                 if($this->socket->send($test) === false)

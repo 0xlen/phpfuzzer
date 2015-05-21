@@ -68,6 +68,7 @@ class Fuzzer
         $doc->load($this->test_file); 
 
         $correct_inputs = $doc->getElementsByTagName('correct_inputs');
+        print_r( $correct_inputs ) ;
         
         foreach($correct_inputs as $test_case)
         {
